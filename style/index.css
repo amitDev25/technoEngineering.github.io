@@ -139,49 +139,49 @@ header {
     width: 589px;
     height: 332px;
     align-self: center;
-    background-image: url(../images/image1.jpg);
+    background-image: url(../images/image7.jpg);
     background-size: 100% 100%;
     border-radius: 30px;
     animation-name: slide;
-    animation-duration: 40s;
+    animation-duration: 48s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
 @keyframes slide {
     0% {
-        background-image: url(../images/image1.jpg);
+        background-image: url(../images/image7.jpg);
         background-size: 100% 100%;
 
 
     }
 
     17% {
-        background-image: url(../images/image2.jpg);
+        background-image: url(../images/image8.jpg);
         background-size: 100% 100%;
 
     }
 
     34% {
-        background-image: url(../images/image3.jpg);
+        background-image: url(../images/image9.jpg);
         background-size: 100% 100%;
 
     }
 
     51% {
         background-size: 100% 100%;
-        background-image: url(../images/image4.jpg);
+        background-image: url(../images/image10.jpg);
 
     }
 
     70% {
-        background-image: url(../images/image5.jpg);
+        background-image: url(../images/image11.jpg);
         background-size: 100% 100%;
 
     }
 
     88% {
-        background-image: url(../images/image6.jpg);
+        background-image: url(../images/image12.jpg);
         background-size: 100% 100%;
 
     }
