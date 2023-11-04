@@ -27,14 +27,14 @@
         if (i < text.length + 1) {
             typeWriterElement.innerHTML = text.substring(0, i++);
             // generate a random Number to emulate Typing on the Keyboard.
-            var rndTyping = 250 - Math.random() * 150;
+            var rndTyping = 250 - Math.random() * 300;
             setTimeout(function () {
                 typeWriter(text, i++, cb)
             }, rndTyping);
         } else if (i === text.length + 1) {
             setTimeout(function () {
                 delWriter(text, i, cb)
-            }, 2000);
+            }, 3000);
         }
     };
     
@@ -43,7 +43,7 @@
         if (typeof textArray[i] == "undefined") {
             setTimeout(function () {
                 StartWriter(0)
-            }, 1000);
+            }, 0);
         } else if (i < textArray[i].length + 1) {
             typeWriter(textArray[i], 0, function () {
                 StartWriter(i + 1);
@@ -53,5 +53,5 @@
     // wait one second then start the typewriter
     setTimeout(function () {
         StartWriter(0);
-    }, 1000);
+    }, 0);
     
