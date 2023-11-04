@@ -170,6 +170,13 @@ transition: top 0.2s ease 0.3s; */
     
     }
 
+    .wordSpace {
+       
+        margin-top: 0px;
+        
+    
+    }
+
 }
 
 /* Background Image */
