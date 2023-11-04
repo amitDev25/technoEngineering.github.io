@@ -161,12 +161,50 @@ header::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    margin-top: 20px;
-    font-size: 3rem;
-    font-weight: bold;
+    margin: 20px;
+    margin-top: 50px;
+    
 
 }
+
+/* Wrapper to Center the Typewriter */
+.wrapper {
+    /* background: #149cbe;
+	color: #fff; */
+	font-family: "Roboto", sans-serif;
+    color: rgb(4, 16, 79);
+	font-size: 3rem;
+    font-weight: bold;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.centeredBox {
+	width: 100%;
+	text-align: center;
+}
+
+/* The Typewriter */
+
+#typewriter{
+	
+}
+
+.cursor {
+	border: 2px solid rgb(4, 16, 79);
+    animation: blink 0.8s infinite;
+}
+@keyframes blink {
+    50% {
+      border: 2px solid transparent;
+    }
+    100% {
+      border: 2px solid rgb(4, 16, 79);
+    }
+  }
 
 .container {
     display: flex;
