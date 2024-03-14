@@ -143,6 +143,9 @@ transition: top 0.2s ease 0.3s; */
     .item p{
         margin: 5px;
     }
+    #para1, .item{
+        font-size: 1.3rem;
+    }
 
 }
 /* Background Image */
