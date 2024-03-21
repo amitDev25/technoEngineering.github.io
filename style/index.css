@@ -101,6 +101,7 @@ header {
     transform: translateX(-100%);
     width: 100vw;
     height: 100vh;
+    z-index: 2;
     /* -webkit-transition: transform 0.2s ease-out;
     transition: transform 0.2s ease-out; */
 }
@@ -214,7 +215,6 @@ header::after {
 
 
 }
-
 .items {
     /* border: 2px solid blue; */
     margin: 5px;
@@ -223,6 +223,66 @@ header::after {
     align-self: center;
 
 }
+.sliderContainer{
+    height: 25vw;
+    width: 40vw;
+    /* border: 4px solid red; */
+    /* margin: auto; */
+   margin-top: 42px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+
+.slider{
+    height: 100%;
+    width: 100%;
+    /* border: 4px solid blue; */
+
+    display: flex;
+    align-items: center;      
+                
+}
+
+.slides{
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+    position: absolute;
+  
+    
+}
+.material-symbols-outlined{
+    /* z-index: 10; */
+    background-color: rgba(255, 255, 255, 0.766);
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    margin: auto;
+    font-size: 1.4rem;
+    color: #031031;
+}
+.material-symbols-outlined:hover{
+    background-color: rgba(255, 243, 243, 0.607);
+
+}
+
+#backArrow{
+    position: absolute;
+    left: 2%;
+
+}
+#forwardArrow{
+    position: absolute;
+    right: 2%;
+
+}
+
+
 
 #welcome {
     display: flex;
@@ -243,82 +303,7 @@ header::after {
 }
 
 
-#imageSlide {
-    width: 589px;
-    height: 332px;
-    align-self: center;
-    background-image: url(../images/image7.jpg);
-    background-size: 100% 100%;
-    border-radius: 30px;
-    animation-name: slide;
-    animation-duration: 60s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    /* -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.3)); */
-}
 
-
-
-@keyframes slide {
-    0% {
-        background-image: url(../images/image1.jpeg);
-        background-size: 100% 100%;
-
-
-    }
-
-    12.5% {
-        background-image: url(../images/image2.jpeg);
-        background-size: 100% 100%;
-
-    }
-
-    25% {
-        background-image: url(../images/image3.jpeg);
-        background-size: 100% 100%;
-
-    }
-
-    37.5% {
-        background-size: 100% 100%;
-        background-image: url(../images/image4.jpeg);
-
-    }
-
-    50% {
-        background-image: url(../images/image5.jpeg);
-        background-size: 100% 100%;
-
-    }
-
-    62.5% {
-        background-image: url(../images/image6.jpeg);
-        background-size: 100% 100%;
-
-    }
-
-    75% {
-        background-image: url(../images/image7.jpeg);
-        background-size: 100% 100%;
-
-
-    }
-
-    87.5% {
-        background-image: url(../images/image8.jpeg);
-        background-size: 100% 100%;
-
-
-    }
-    100% {
-        background-image: url(../images/image9.jpeg);
-        background-size: 100% 100%;
-
-
-    }
-
-
-}
 
 .footer{
     margin-top: 65px;
