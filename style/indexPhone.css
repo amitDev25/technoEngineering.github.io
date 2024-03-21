@@ -173,6 +173,10 @@ transition: top 0.2s ease 0.3s; */
     #imageSlider{
         transition: 1s;
     }
+    .material-symbols-outlined{
+        padding: 3px;
+        font-size: 1rem;
+    }
 
     .wordSpace {
        
