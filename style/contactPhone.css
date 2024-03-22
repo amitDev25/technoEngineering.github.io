@@ -146,8 +146,23 @@ transition: top 0.2s ease 0.3s; */
     #para1, .item{
         font-size: 1.3rem;
     }
+    .contactContainer{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #submit, #reset{
+        width: 25%;
+        
+    }
+    #map{
+        height: 260px;
+        
+    
+    }
 
 }
+
 /* Background Image */
 @media only screen and (max-width:1300px){
 header::after {
