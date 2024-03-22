@@ -9,7 +9,7 @@ function sendEmail() {
         Email.send({
         SecureToken : "00ae0dd5-74c7-4582-9267-a03ae0a9e282",
         // To: 'arupjisumita2003@gmail',
-        To: 'aruproy65@yahoo.co.in',
+        To: 'arupjisumita2003@gmail.com',
         From: "amitroy251203@gmail.com",
         Subject: "Response From Techno Engineering",
         Body: mainbody
