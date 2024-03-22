@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Techno Engineering: Contact Us</title>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style/contact.css">  
+
+    <link rel="stylesheet" href="style/contact.css">
     <link rel="stylesheet" media="screen and (max-width: 1300px)" href="style/contactPhone.css">
 
 </head>
@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt=""></a> 
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
 
         </div>
         <div class="title">
@@ -30,7 +30,7 @@
     <nav class="navbar">
 
         <ul>
-            <li ><a id="home" href="index.html">Home</a></li>
+            <li><a id="home" href="index.html">Home</a></li>
             <li><a id="service" href="services.html">SERVICES</a></li>
             <li><a id="about" href="about.html">ABOUT US</a></li>
             <li><a id="contact" href="contact.html">CONTACT US</a></li>
@@ -49,29 +49,70 @@
     <div class="overlay-menu">
         <ul id="menu">
 
-            <li ><a id="home" href="index.html">Home</a></li>
+            <li><a id="home" href="index.html">Home</a></li>
             <li><a id="service" href="services.html">SERVICES</a></li>
             <li><a id="about" href="about.html">ABOUT US</a></li>
             <li><a id="contact" href="contact.html">CONTACT US</a></li>
 
 
         </ul>
-        
+
     </div>
     <div class="container">
-       <p id="para1"> We Value Your Feedback And Inquiries! If You Have Any Questions, Suggestions, Or Simply Want To Say Hello, We're Here To Listen. Get In Touch With Us Using The Contact Information Provided Below, And We'll Be Delighted To Assist You. </p>
-        <div class="item" id="contactForm">
-            <p>Name: Arup Roy </p>
-            <p>Mobile No: 7980627299</p>
-            <p>Email: aruproy65@yahoo.co.in</p>
-            <p>Address: 352, Jaigir Ghat Road, 1 No Bacharpara, Thakurpukur, Kolkata- 700 063</p>
+        <p id="para1"> We Value Your Feedback And Inquiries! If You Have Any Questions, Suggestions, Or Simply Want To
+            Say Hello, We're Here To Listen. Get In Touch With Us Using The Contact Information Provided Below Or Using
+            The Contact Form, And
+            We'll Be Delighted To Assist You. </p>
 
+        <div class="contactContainer">
+
+            <div class="item" id="getInTouch">
+                <h2>Get In Touch</h2>
+
+                <form>
+                    <input type="text" id="name" class="formItem" placeholder="Enter Your Name">
+                    <input type="text" id="mobile" class="formItem" placeholder="Enter Your Mobile Number">
+                    <input type="email" id="email" class="formItem" placeholder="Enter Your Email Id">
+                    <textarea name="message" id="message" class="formItem" cols="30" rows="8"
+                        placeholder="Enter The Message"></textarea>
+
+                    <div class="submitReset">
+                        <!-- <input type="submit" value="Submit" id="submit" class="formItem" onclick="sendEmail()"> -->
+                        <button type="button" id="submit" class="formItem" onclick="sendEmail()">Submit</button>
+                        <input type="reset" value="Reset" id="reset" class="formItem">
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="details">
+                <div class="item" id="contactForm">
+                    <p>Name: Arup Roy </p>
+                    <p>Mobile No: 7980627299</p>
+                    <p>Email: aruproy65@yahoo.co.in</p>
+                    <p>Address: 352, Jaigir Ghat Road, 1 No Bacharpara, Thakurpukur, Kolkata- 700 063</p>
+
+                </div>
+
+                <div class="item" id="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3687.0650432984085!2d88.30161957475403!3d22.464189936936084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027b6946ef6bbd%3A0xa53d860f966f7f73!2sTechno%20Engineering%2C%20Kolkata!5e0!3m2!1sen!2sin!4v1711114240045!5m2!1sen!2sin"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="footer">
+            Copyright &copy; 2023 Techno Engineering | All Rights Reservred
         </div>
     </div>
 
-    <div class="footer">
-        Copyright &copy; 2023 Techno Engineering | All Rights Reservred
-    </div>
+
 
 
 
@@ -82,6 +123,8 @@
 
 
     <script src="script/navMenu.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script/contact.js"></script>
 
 
 </body>
