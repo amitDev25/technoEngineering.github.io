@@ -199,12 +199,78 @@ header::after {
 }
 
 .footer{
-    margin-top: 50px;
-    position: relative;
-    bottom: 0px;
+    margin-top: 5%;
+    /* position: relative; */
+   
     /* background-color: rgb(9, 2, 99); */
     color: #031031;
     text-align: center;
     font-weight: bold;
 
+}
+
+.contactContainer{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#getInTouch h2{
+    margin: auto;
+}
+
+#getInTouch form{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.formItem{
+    margin: 10px;
+    padding: 8px;
+    width: 80%;
+    
+    background-color: #f1ebdda8;
+    /* border: none; */
+    border-radius: 13px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.submitReset{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#submit, #reset{
+    width: 18%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#submit:hover, #reset:hover{
+    background-color: #cfd7de82;
+}
+
+#map{
+    background-color: white;
+    height: 350px;
+    padding: 0px;
+
+}
+
+#map iframe{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
