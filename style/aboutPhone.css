@@ -153,7 +153,7 @@ transition: top 0.2s ease 0.3s; */
 
 }
 @media only screen and (max-width:1000px){
-    .container{
+    .vismis{
         flex-direction: column;
     }
     .items{
